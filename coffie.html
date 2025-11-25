@@ -1216,8 +1216,11 @@
         .filter-container {
             display: flex;
             gap: 15px;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             transition: all 0.3s ease;
+            align-content: stretch;
+            justify-content: space-evenly;
+            align-items: stretch;
         }
         
         .filter-group {
@@ -1361,7 +1364,6 @@
         
         /* Quick Filters */
          .quick-filters {
-            display: flex;
             flex-wrap: wrap;
             gap: 10px;
             margin-bottom: 20px;
@@ -3248,9 +3250,10 @@
                 display: block;
             }
             
-            .coffee-grid {
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            }
+             .coffee-grid {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 20px;
+    }
             
             .cart-modal {
                 width: 100%;
@@ -3334,7 +3337,32 @@
                 font-size: 0.8rem;
                 padding: 6px 0;
             }
-            
+             .coffee-image {
+        height: 220px;
+    }
+    
+    .coffee-filter {
+        gap: 10px;
+    }
+    
+    .coffee-filter-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+    
+    .coffee-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .add-to-cart {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .wishlist {
+        align-self: center;
+    }
             .main-header {
                 padding: 8px 0;
             }
@@ -3399,8 +3427,9 @@
             }
             
             .coffee-grid {
-                grid-template-columns: 1fr;
-            }
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
             
             .sidebar {
                 width: 280px;
@@ -5182,25 +5211,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Cultural Section -->
-    <section class="cultural-section">
-        <div class="container">
-            <div class="cultural-content">
-                <div class="cultural-text">
-                    <h2 data-translate="cultural-title">The Ethiopian Coffee Ceremony</h2>
-                    <p data-translate="cultural-p1">The Ethiopian coffee ceremony is a central part of Ethiopian culture and social life. It is a ritualized form of making and drinking coffee that can take several hours.</p>
-                    <p data-translate="cultural-p2">The ceremony is typically performed by a woman and involves roasting green coffee beans, grinding them, and brewing the coffee in a special pot called a jebena.</p>
-                    <p data-translate="cultural-p3">Guests are invited to enjoy the aromatic coffee along with traditional snacks like popcorn or roasted barley. The ceremony is a time for conversation, community, and connection.</p>
-                    <a href="#" class="btn" data-translate="cultural-button">Learn More</a>
-                </div>
-                <div class="cultural-image">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTGZxodUgLrDsrZ0RJ6reC9Ac898CP24EswdDal5H7L4yeZWT7WcCP1mE&s" alt="Ethiopian Coffee Ceremony">
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Form Section -->
     <section class="contact-section" id="contact">
         <div class="container">
